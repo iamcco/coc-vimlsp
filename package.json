@@ -1,5 +1,5 @@
 {
-  "name": "coc-vim",
+  "name": "coc-vimlsp",
   "version": "0.0.1",
   "description": "vim language server extension for coc.nvim",
   "keywords": [
