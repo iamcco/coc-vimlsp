@@ -1,0 +1,55 @@
+{
+  "name": "coc-vim",
+  "version": "0.0.1",
+  "description": "vim language server extension for coc.nvim",
+  "keywords": [
+    "coc.nvim",
+    "vim",
+    "lsp"
+  ],
+  "author": "iamcco <ooiss@qq.com>",
+  "license": "MIT",
+  "repository": "git@github.com:iamcco/coc-vim.git",
+  "engines": {
+    "coc": "^0.0.62"
+  },
+  "activationEvents": [
+    "onLanguage:vim"
+  ],
+  "contributes": {
+    "configuration": {
+      "title": "vim language server configuration",
+      "properties": {
+        "vimlsp.debug": {
+          "type": "boolean",
+          "default": false,
+          "description": "enable coc-vimlsp service debug"
+        },
+        "vimlsp.trace.server": {
+          "type": "string",
+          "default": "off",
+          "enum": [
+            "off",
+            "messages",
+            "verbose"
+          ],
+          "description": "Trace level of vim language server"
+        }
+      }
+    }
+  },
+  "main": "./lib/index.js",
+  "scripts": {
+    "watch": "tsc -w -p ./",
+    "build": "rm -rf ./lib & tsc -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.0",
+    "coc.nvim": "^0.0.67",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "tslib": "^1.9.3",
+    "vim-language-server": "^0.0.1"
+  }
+}
