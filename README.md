@@ -1,5 +1,15 @@
 # vim language server extension for coc.nvim
 
+![image](https://user-images.githubusercontent.com/5492542/57384333-019b9880-71e3-11e9-9ee8-7e731944777b.png)
+
+## Features
+
+- auto completion
+- signature help
+- hover document
+- snippets
+- diagnostic
+
 ## Install
 
 ``` vim
