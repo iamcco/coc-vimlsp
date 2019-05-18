@@ -47,11 +47,13 @@ export async function activate(context: ExtensionContext) {
 
   const vimruntime = await nvim.commandOutput('echo $VIMRUNTIME')
   const runtimepath = await nvim.getOption('runtimepath')
+  const iskeyword = await nvim.getOption('iskeyword')
 
   // Options to control the language client
   let clientOptions: LanguageClientOptions = {
     documentSelector: ['vim'],
     initializationOptions: {
+      iskeyword,
       vimruntime,
       runtimepath
     }
