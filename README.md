@@ -24,6 +24,17 @@
 
 ## Config
 
+document highlight:
+
+``` vim
+let g:markdown_fenced_languages = [
+      \ 'vim',
+      \ 'help'
+      \]
+```
+
+coc-settings.json
+
 ``` jsonc
 {
     "vimlsp.debug": {
