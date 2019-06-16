@@ -2484,10 +2484,10 @@ v8flags@^2.1.1:
   dependencies:
     user-home "^1.1.1"
 
-vim-language-server@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/vim-language-server/-/vim-language-server-1.0.7.tgz#74579e08d9f4052ab3a291b6efc90dd64964ee31"
-  integrity sha512-UQNwCkZevI05QTvxAu/Rby5l4tWonC/rXTbl9JR3lUWyWdZsTL50APBUx4Po++bb2w5Lb+Huhs8TguVuBshg2g==
+vim-language-server@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/vim-language-server/-/vim-language-server-1.0.8.tgz#de941d17dd530cc4a04a8bf96440599a447ec70d"
+  integrity sha512-V+v+LMS1tdaIAbbW48JmKkMi6EecgevJHdyoTWCk9GMqN+7jcDmIBf661anC1YAtz2eBItUVOEBxpeBvdCCBBQ==
   dependencies:
     fast-glob "^2.2.6"
     findup "^0.1.5"
