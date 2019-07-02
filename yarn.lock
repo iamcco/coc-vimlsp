@@ -879,9 +879,9 @@ uuid@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
 
-vim-language-server@^1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/vim-language-server/-/vim-language-server-1.0.11.tgz#ab38b802d7b4318c57058d1bc04744a8d7f0afed"
+vim-language-server@^1.0.13:
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/vim-language-server/-/vim-language-server-1.0.13.tgz#7d73008a67909cfe679471ed3c75ec1e62ceb3f6"
   dependencies:
     fast-glob "^2.2.6"
     findup "^0.1.5"
