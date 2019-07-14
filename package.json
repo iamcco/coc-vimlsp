@@ -1,6 +1,6 @@
 {
   "name": "coc-vimlsp",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "description": "vim language server extension for coc.nvim",
   "keywords": [
     "coc.nvim",
@@ -24,6 +24,11 @@
           "type": "boolean",
           "default": false,
           "description": "enable coc-vimlsp service debug"
+        },
+        "vimlsp.diagnostic.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "enable diagnostic"
         },
         "vimlsp.trace.server": {
           "type": "string",
@@ -50,6 +55,6 @@
   },
   "dependencies": {
     "tslib": "^1.9.3",
-    "vim-language-server": "^1.0.18"
+    "vim-language-server": "^1.0.19"
   }
 }

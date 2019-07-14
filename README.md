@@ -42,6 +42,11 @@ coc-settings.json
       "default": false,
       "description": "enable coc-vimlsp service debug"
     },
+    "vimlsp.diagnostic.enable": {
+      "type": "boolean",
+      "default": true,
+      "description": "enable diagnostic"
+    },
     "vimlsp.trace.server": {
       "type": "string",
       "default": "off",
