@@ -964,10 +964,10 @@ uuid@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
 
-vim-language-server@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/vim-language-server/-/vim-language-server-1.2.1.tgz#f4f87915eca2240a1a23f2b0dfbcc1762f41564f"
-  integrity sha512-YJwEDitP+xsp0OHKt33l0ji7B3gF6R0ZFHL5lKpiPjF/j0ZRWzeIGjYVf3ozXXcxnLGOkdFtjBZINSPruBD3qg==
+vim-language-server@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/vim-language-server/-/vim-language-server-1.2.2.tgz#1800e5b36ff7250a500192f229ba405c4e2633d6"
+  integrity sha512-+yha1BnHNEoDcp2ibb1pwhnyyqwbMrL4YzVgRnbfIr5ZONbGA5X8LPzc4xbrDjl/KWGzY+t5e3iIv607CrSXfQ==
   dependencies:
     fast-glob "^2.2.6"
     findup "^0.1.5"
