@@ -49,6 +49,8 @@ export async function activate(context: ExtensionContext) {
   const runtimepath = await nvim.getOption('runtimepath')
   const iskeyword = await nvim.getOption('iskeyword')
   const isEnableDiagnostic = config.get<boolean>('diagnostic.enable', true)
+  const fromVimruntime = config.get<boolean>('suggest.fromVimruntime', true)
+  const fromRuntimepath = config.get<boolean>('suggest.fromRuntimepath', false)
 
   // Options to control the language client
   let clientOptions: LanguageClientOptions = {
@@ -59,6 +61,10 @@ export async function activate(context: ExtensionContext) {
       runtimepath,
       diagnostic: {
         enable: isEnableDiagnostic
+      },
+      suggest: {
+        fromVimruntime,
+        fromRuntimepath
       }
     }
   }

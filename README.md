@@ -47,6 +47,16 @@ coc-settings.json
       "default": true,
       "description": "enable diagnostic"
     },
+    "vimlsp.suggest.fromVimruntime": {
+      "type": "boolean",
+      "default": true,
+      "description": "completeitems from vimruntime's vim files"
+    },
+    "vimlsp.suggest.fromRuntimepath": {
+      "type": "boolean",
+      "default": false,
+      "description": "completeitems from runtimepath's vim files, if this is true that fromVimruntime is true"
+    },
     "vimlsp.trace.server": {
       "type": "string",
       "default": "off",
@@ -59,6 +69,8 @@ coc-settings.json
     }
 }
 ```
+
+> **Note**: while `fromRuntimepath` is true, if you have install too many plugins it will slow down the complete
 
 ### Buy Me A Coffee ☕️
 
