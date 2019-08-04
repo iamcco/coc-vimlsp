@@ -47,6 +47,21 @@ coc-settings.json
       "default": true,
       "description": "enable diagnostic"
     },
+    "vimlsp.indexes.runtimepath": {
+      "type": "boolean",
+      "default": true,
+      "description": "if index vim's runtimepath files, this will effect the suggest"
+    },
+    "vimlsp.indexes.count": {
+      "type": "number",
+      "default": 3,
+      "description": "count of files index at the same time, change to greater will speed up index but will cause high CPU usage for some time"
+    },
+    "vimlsp.indexes.gap": {
+      "type": "number",
+      "default": 100,
+      "description": "time gap between parse file, change to smaller will speed up index but will cause high CPU usage for some time"
+    },
     "vimlsp.suggest.fromVimruntime": {
       "type": "boolean",
       "default": true,
