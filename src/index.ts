@@ -52,7 +52,7 @@ export async function activate(context: ExtensionContext) {
   const fromVimruntime = config.get<boolean>('suggest.fromVimruntime', true)
   const fromRuntimepath = config.get<boolean>('suggest.fromRuntimepath', false)
   const indexesRuntimepath = config.get<boolean>('indexes.runtimepath', true)
-  const indexesCount = config.get<number>('indexes.count', 3)
+  const indexesCount = config.get<number>('indexes.count', 1)
   const indexesGap = config.get<number>('indexes.gap', 100)
 
   // Options to control the language client

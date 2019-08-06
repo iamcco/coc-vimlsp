@@ -1,6 +1,6 @@
 {
   "name": "coc-vimlsp",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "vim language server extension for coc.nvim",
   "keywords": [
     "coc.nvim",
@@ -37,7 +37,7 @@
         },
         "vimlsp.indexes.count": {
           "type": "number",
-          "default": 3,
+          "default": 1,
           "description": "count of files index at the same time, change to greater will speed up index but will cause high CPU usage for some time"
         },
         "vimlsp.indexes.gap": {
@@ -80,6 +80,6 @@
   },
   "dependencies": {
     "tslib": "^1.9.3",
-    "vim-language-server": "^1.2.5"
+    "vim-language-server": "^1.2.6"
   }
 }
