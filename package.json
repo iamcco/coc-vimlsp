@@ -1,6 +1,6 @@
 {
   "name": "coc-vimlsp",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "vim language server extension for coc.nvim",
   "keywords": [
     "coc.nvim",
@@ -80,6 +80,6 @@
   },
   "dependencies": {
     "tslib": "^1.9.3",
-    "vim-language-server": "^1.2.6"
+    "vim-language-server": "^1.2.7"
   }
 }
