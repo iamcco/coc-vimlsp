@@ -3116,17 +3116,16 @@ v8-compile-cache@2.0.3:
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.0.3.tgz#00f7494d2ae2b688cfe2899df6ed2c54bef91dbe"
   integrity sha512-CNmdbwQMBjwr9Gsmohvm0pbL954tJrNzf6gWL3K+QMQf00PF7ERGrEiLgjuU3mKreLC2MeGhUsNV9ybTbLgd3w==
 
-vim-language-server@^1.2.13:
-  version "1.2.13"
-  resolved "https://registry.yarnpkg.com/vim-language-server/-/vim-language-server-1.2.13.tgz#95d2180bfcbc9a6f17565ff7de786a5009b4b522"
-  integrity sha512-4DYgEJYkd2ngNol1/CKiHfupOM5wrU3Bvu7aKeUMYVoG4CzQHZ3gb7xyam9tzICruR/tHZEY6FjwexVmrInP5w==
+vim-language-server@^1.2.14:
+  version "1.2.14"
+  resolved "https://registry.yarnpkg.com/vim-language-server/-/vim-language-server-1.2.14.tgz#4af08bffc9f000a53b77ff1f0677c4504719c497"
+  integrity sha512-MLytuVs83QnzmokEIotHnFzrnynhj3/AmASaagxwlEpkIU4YEDV8hQtILZ7PK0AOea7E/FnnKYq++sAbXdeNUQ==
   dependencies:
     fast-glob "^3.0.4"
     findup "^0.1.5"
     rxjs "^6.4.0"
     rxjs-operators "^1.1.2"
     shvl "^2.0.0"
-    tslib "^1.9.3"
     vscode-languageserver "^5.2.1"
     vscode-uri "^1.0.6"
 
