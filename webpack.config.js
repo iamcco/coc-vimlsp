@@ -4,7 +4,8 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.ts',
-    server: './src/server.ts'
+    server: './src/server.ts',
+    scan: './src/scan.ts'
   },
   target: 'node',
   mode: 'none',
