@@ -7,6 +7,7 @@ import {
   workspace,
   services
 } from 'coc.nvim';
+import {resolve} from 'path';
 
 export async function activate(context: ExtensionContext) {
   const config = workspace.getConfiguration('vimlsp')
@@ -16,7 +17,7 @@ export async function activate(context: ExtensionContext) {
     return
   }
   // The server is implemented in node
-  let serverModule = require.resolve('vim-language-server')
+  let serverModule = resolve(context.extensionPath, 'out', 'server')
 
   // If the extension is launched in debug mode then the debug server options are used
   // Otherwise the run options are used
