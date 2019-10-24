@@ -35,57 +35,26 @@ let g:markdown_fenced_languages = [
 
 coc-settings.json
 
-``` jsonc
-{
-    "vimlsp.debug": {
-      "type": "boolean",
-      "default": false,
-      "description": "enable coc-vimlsp service debug"
-    },
-    "vimlsp.diagnostic.enable": {
-      "type": "boolean",
-      "default": true,
-      "description": "enable diagnostic"
-    },
-    "vimlsp.indexes.runtimepath": {
-      "type": "boolean",
-      "default": true,
-      "description": "if index vim's runtimepath files, this will effect the suggest"
-    },
-    "vimlsp.indexes.count": {
-      "type": "number",
-      "default": 3,
-      "description": "count of files index at the same time, change to greater will speed up index but will cause high CPU usage for some time"
-    },
-    "vimlsp.indexes.gap": {
-      "type": "number",
-      "default": 100,
-      "description": "time gap between parse file, change to smaller will speed up index but will cause high CPU usage for some time"
-    },
-    "vimlsp.suggest.fromVimruntime": {
-      "type": "boolean",
-      "default": true,
-      "description": "completeitems from vimruntime's vim files"
-    },
-    "vimlsp.suggest.fromRuntimepath": {
-      "type": "boolean",
-      "default": false,
-      "description": "completeitems from runtimepath's vim files, if this is true that fromVimruntime is true"
-    },
-    "vimlsp.trace.server": {
-      "type": "string",
-      "default": "off",
-      "enum": [
-        "off",
-        "messages",
-        "verbose"
-      ],
-      "description": "Trace level of vim language server"
-    }
-}
-```
+- `vimlsp.trace.server`
+  > "description": "Trace level of vim language server"
+- `vimlsp.debug`: default: false
+  > "description": "enable coc-vimlsp service debug"
+- `vimlsp.diagnostic.enable`: default: true
+  > "description": "enable diagnostic"
+- `vimlsp.indexes.runtimepath`: default: true
+  > "description": "if index vim's runtimepath files, this will effect the suggest"
+- `vimlsp.indexes.count`: default: 3
+  > "description": "count of files index at the same time, change to greater will speed up index but will cause high CPU usage for some time"
+- `vimlsp.indexes.gap`: default: 100
+  > "description": "time gap between parse file, change to smaller will speed up index but will cause high CPU usage for some time"
+- `vimlsp.indexes.workDirPatterns`: default: [".git", "autoload", "plugin"]
+  > "description": "Names of files used as the mark of project root."
+- `vimlsp.suggest.fromVimruntime`: `default`: true
+  > "description": "completeitems from runtimepath's vim files, if this is true that fromVimruntime is true"  > },
+- `vimlsp.suggest.fromRuntimepath`: default: false
+  > "description": "completeitems from runtimepath's vim files, if this is true that fromVimruntime is true"
 
-> **Note**: while `fromRuntimepath` is true, if you have install too many plugins it will slow down the complete
+**Note**: while `fromRuntimepath` is true, if you have install too many plugins it will slow down the complete
 
 ### Buy Me A Coffee ☕️
 

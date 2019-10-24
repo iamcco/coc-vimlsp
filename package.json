@@ -1,6 +1,6 @@
 {
   "name": "coc-vimlsp",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "vim language server extension for coc.nvim",
   "keywords": [
     "coc.nvim",
@@ -45,6 +45,14 @@
           "default": 100,
           "description": "time gap between parse file, change to smaller will speed up index but will cause high CPU usage for some time"
         },
+        "vimlsp.indexes.workDirPatterns": {
+          "type": "array",
+          "default": [".git", "autoload", "plugin"],
+          "items": {
+            "type": "string"
+          },
+          "description": "Names of files used as the mark of project root."
+        },
         "vimlsp.suggest.fromVimruntime": {
           "type": "boolean",
           "default": true,
@@ -79,7 +87,7 @@
     "ts-loader": "^6.2.0",
     "tslib": "^1.9.3",
     "typescript": "^3.4.5",
-    "vim-language-server": "^1.3.0",
+    "vim-language-server": "^1.3.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9"
   }
