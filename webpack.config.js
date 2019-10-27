@@ -8,7 +8,7 @@ module.exports = {
     scan: './src/scan.ts'
   },
   target: 'node',
-  mode: 'none',
+  mode: 'production',
   resolve: {
     mainFields: ['module', 'main'],
     extensions: ['.js', '.ts']
