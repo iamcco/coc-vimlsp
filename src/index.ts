@@ -55,6 +55,7 @@ export async function activate(context: ExtensionContext) {
   const indexesRuntimepath = config.get<boolean>('indexes.runtimepath', true)
   const indexesCount = config.get<number>('indexes.count', 1)
   const indexesGap = config.get<number>('indexes.gap', 100)
+  const projectRootPatterns = config.get<string[]>('indexes.projectRootPatterns', [".git", "autoload", "plugin"])
 
   // Options to control the language client
   let clientOptions: LanguageClientOptions = {
@@ -69,7 +70,8 @@ export async function activate(context: ExtensionContext) {
       indexes: {
         runtimepath: indexesRuntimepath,
         count: indexesCount,
-        gap: indexesGap
+        gap: indexesGap,
+        projectRootPatterns
       },
       suggest: {
         fromVimruntime,

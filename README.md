@@ -47,7 +47,7 @@ coc-settings.json
   > "description": "count of files index at the same time, change to greater will speed up index but will cause high CPU usage for some time"
 - `vimlsp.indexes.gap`: default: 100
   > "description": "time gap between parse file, change to smaller will speed up index but will cause high CPU usage for some time"
-- `vimlsp.indexes.workDirPatterns`: default: [".git", "autoload", "plugin"]
+- `vimlsp.indexes.projectRootPatterns`: default: [".git", "autoload", "plugin"]
   > "description": "Names of files used as the mark of project root."
 - `vimlsp.suggest.fromVimruntime`: `default`: true
   > "description": "completeitems from runtimepath's vim files, if this is true that fromVimruntime is true"  > },
