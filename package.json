@@ -1,6 +1,6 @@
 {
   "name": "coc-vimlsp",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "vim language server extension for coc.nvim",
   "keywords": [
     "coc.nvim",
@@ -91,7 +91,7 @@
     "ts-loader": "^6.2.0",
     "tslib": "^1.9.3",
     "typescript": "^3.4.5",
-    "vim-language-server": "^1.5.1",
+    "vim-language-server": "^1.5.5",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9"
   }
