@@ -1,6 +1,6 @@
 {
   "name": "coc-vimlsp",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "vim language server extension for coc.nvim",
   "keywords": [
     "coc.nvim",
@@ -24,6 +24,14 @@
           "type": "boolean",
           "default": false,
           "description": "enable coc-vimlsp service debug"
+        },
+        "vimlsp.filetypes": {
+          "type": "array",
+          "default": ["vim"],
+          "items": {
+            "type": "string"
+          },
+          "description": "enable coc-vimlsp for filetypes"
         },
         "vimlsp.diagnostic.enable": {
           "type": "boolean",
@@ -91,7 +99,7 @@
     "ts-loader": "^7.0.3",
     "tslib": "^1.11.2",
     "typescript": "^3.8.3",
-    "vim-language-server": "^1.5.6",
+    "vim-language-server": "^1.5.7",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   }

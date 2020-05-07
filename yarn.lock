@@ -3082,10 +3082,10 @@ v8-compile-cache@2.0.3:
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.0.3.tgz#00f7494d2ae2b688cfe2899df6ed2c54bef91dbe"
   integrity sha512-CNmdbwQMBjwr9Gsmohvm0pbL954tJrNzf6gWL3K+QMQf00PF7ERGrEiLgjuU3mKreLC2MeGhUsNV9ybTbLgd3w==
 
-vim-language-server@^1.5.6:
-  version "1.5.6"
-  resolved "https://registry.yarnpkg.com/vim-language-server/-/vim-language-server-1.5.6.tgz#f44ed2b4e033e947c25e6e475910d467135c8851"
-  integrity sha512-S60UagVc6TqJPrnqU3WNR7qz79Zcrv3CaPepe0w933qv+fJuvl+ozE62pdfCdeVaLa7LpK6CefK0w5SSj2PKPA==
+vim-language-server@^1.5.7:
+  version "1.5.7"
+  resolved "https://registry.yarnpkg.com/vim-language-server/-/vim-language-server-1.5.7.tgz#a719457c3c991a8d632d3ea2696946559b9d1ebd"
+  integrity sha512-JxGCIzL2p41FyFkBjmqdFCSX7AwUps+/o9TALsxekN55LM4BL7N6wRYCXpBgQMW49Itn1MNKcxqq5Ycg/LoaMA==
 
 vm-browserify@^1.0.1:
   version "1.1.0"

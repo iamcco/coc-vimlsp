@@ -59,7 +59,7 @@ export async function activate(context: ExtensionContext) {
 
   // Options to control the language client
   let clientOptions: LanguageClientOptions = {
-    documentSelector: ['vim'],
+    documentSelector: config.get<string[]>('vimlsp.filetypes', ['vim']),
     initializationOptions: {
       iskeyword,
       vimruntime,
