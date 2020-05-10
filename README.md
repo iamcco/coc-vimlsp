@@ -12,6 +12,9 @@
 - hover document
 - go to definition
 - go to references
+- document highlight
+- folding range
+- select range
 - rename
 - snippets
 - diagnostic
