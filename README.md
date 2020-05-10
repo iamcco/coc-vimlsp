@@ -12,6 +12,7 @@
 - hover document
 - go to definition
 - go to references
+- document symbols
 - document highlight
 - folding range
 - select range
@@ -58,6 +59,40 @@ coc-settings.json
   > "description": "completeitems from runtimepath's vim files, if this is true that fromVimruntime is true"
 
 **Note**: while `fromRuntimepath` is true, if you have install too many plugins it will slow down the complete
+
+## Usage
+
+**Auto complete and function signature help**:
+
+![autocomplete](https://user-images.githubusercontent.com/5492542/81493984-909c2e80-92d7-11ea-9638-d7be3e18e1d1.gif)
+
+**Hover document**:
+
+![hover](https://user-images.githubusercontent.com/5492542/81494066-5aab7a00-92d8-11ea-9ccd-31bd6440e622.gif)
+
+**Go to definition and references**:
+
+![goto](https://user-images.githubusercontent.com/5492542/81494125-c261c500-92d8-11ea-83c0-fecba34ea55e.gif)
+
+**Document symbols**:
+
+![symbols](https://user-images.githubusercontent.com/5492542/81494183-5cc20880-92d9-11ea-9495-a7691420df39.gif)
+
+**Document highlight**:
+
+![highlight](https://user-images.githubusercontent.com/5492542/81494214-b1fe1a00-92d9-11ea-9cc1-0420cddc5cbc.gif)
+
+**Folding range and selection range**:
+
+![fold](https://user-images.githubusercontent.com/5492542/81494276-3bade780-92da-11ea-8c93-bc3d2127a19d.gif)
+
+**Rename**:
+
+![rename](https://user-images.githubusercontent.com/5492542/81494329-aa8b4080-92da-11ea-8a5d-ace5385445e9.gif)
+
+**Snippets and diagnostic**:
+
+![dia](https://user-images.githubusercontent.com/5492542/81494408-503eaf80-92db-11ea-96ac-641d46027623.gif)
 
 ### Buy Me A Coffee ☕️
 
