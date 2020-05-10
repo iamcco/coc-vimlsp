@@ -3,6 +3,9 @@
 > [vim-language-server](https://github.com/iamcco/vim-language-server)
 > extension for coc.nvim
 
+[![Npm](https://img.shields.io/github/package-json/v/iamcco/coc-vimlsp)](https://www.npmjs.com/package/coc-vimlsp)
+![download](https://img.shields.io/npm/dm/coc-vimlsp)
+
 ![image](https://user-images.githubusercontent.com/5492542/57384333-019b9880-71e3-11e9-9ee8-7e731944777b.png)
 
 ## Features
