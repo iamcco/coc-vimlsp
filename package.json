@@ -1,6 +1,6 @@
 {
   "name": "coc-vimlsp",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "vim language server extension for coc.nvim",
   "keywords": [
     "coc.nvim",
@@ -74,7 +74,7 @@
         },
         "vimlsp.suggest.fromRuntimepath": {
           "type": "boolean",
-          "default": true,
+          "default": false,
           "description": "completeitems from runtimepath's vim files, if this is true that fromVimruntime is true"
         },
         "vimlsp.trace.server": {
@@ -104,7 +104,7 @@
     "ts-loader": "^7.0.5",
     "tslib": "^1.11.2",
     "typescript": "^3.8.3",
-    "vim-language-server": "^2.0.0",
+    "vim-language-server": "^2.0.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
   }

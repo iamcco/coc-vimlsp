@@ -58,7 +58,7 @@ coc-settings.json
   > "description": "Names of files used as the mark of project root."
 - `vimlsp.suggest.fromVimruntime`: `default`: true
   > "description": "completeitems from runtimepath's vim files, if this is true that fromVimruntime is true"  > },
-- `vimlsp.suggest.fromRuntimepath`: default: true
+- `vimlsp.suggest.fromRuntimepath`: default: false
   > "description": "completeitems from runtimepath's vim files, if this is true that fromVimruntime is true"
 
 ## Usage
@@ -94,10 +94,6 @@ coc-settings.json
 **Snippets and diagnostic**:
 
 ![dia](https://user-images.githubusercontent.com/5492542/81494408-503eaf80-92db-11ea-96ac-641d46027623.gif)
-
-### Changelog
-
-- v0.9.0 autocomplete speedup, and `fromRuntimepath` default is `true`
 
 ### Buy Me A Coffee ☕️
 
