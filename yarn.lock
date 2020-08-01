@@ -3285,10 +3285,10 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vim-language-server@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/vim-language-server/-/vim-language-server-2.0.1.tgz#67fd3446a8361cf5dfec43d9fcba463d4882b3c2"
-  integrity sha512-+n5LKpyyCbrUxpxjdjVJc7JPsoKdtFRkOgoMgNEZiZBzcAa7OaTeJ7O5s68bcrTsVFYVJYAiWqHuuuEimN/3pA==
+vim-language-server@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/vim-language-server/-/vim-language-server-2.1.0.tgz#0aed5397ea239746a25b8c544b7599478385dc50"
+  integrity sha512-i0PTJh2XEPEUvRn78j1nxTlNVcTOKr4FLwIwhkjaC0ovGGViwnBgRd7StM0NS3UCvcVzLNy78Hu31S7RHkiHbw==
 
 vm-browserify@^1.0.1:
   version "1.1.0"

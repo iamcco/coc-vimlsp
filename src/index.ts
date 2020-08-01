@@ -88,6 +88,28 @@ export async function activate(context: ExtensionContext) {
     clientOptions
   );
 
+  const changeIskeyword = async () => {
+    const doc = await workspace.document
+    if (!doc) {
+      return
+    }
+    const buffer = doc.buffer
+    const iskeyword = await buffer.getOption('iskeyword')
+    client.sendNotification('$/change/iskeyword', iskeyword)
+  }
+
+  client.onReady().then(() => {
+    setTimeout(changeIskeyword, 100);
+  })
+
+  context.subscriptions.push(
+    workspace.registerAutocmd({
+      event: "BufEnter",
+      pattern: '*.vim',
+      callback: changeIskeyword
+    })
+  )
+
   // Push the disposable to the context's subscriptions so that the
   // client can be deactivated on extension deactivation
   context.subscriptions.push(services.registLanguageClient(client));
