@@ -61,6 +61,7 @@ export async function activate(context: ExtensionContext) {
   let clientOptions: LanguageClientOptions = {
     documentSelector: config.get<string[]>('vimlsp.filetypes', ['vim']),
     initializationOptions: {
+      isNeovim: workspace.isNvim,
       iskeyword,
       vimruntime,
       runtimepath,
