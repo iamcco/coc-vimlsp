@@ -2012,10 +2012,10 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vim-language-server@^2.1.3:
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/vim-language-server/-/vim-language-server-2.1.3.tgz#ce85fa0aeaa8e40cdcb3f620de889e22daeb4171"
-  integrity sha512-BZAMbgNXq9GFg0HrXbQoPs+VLzJasM/UyN34v0wEMOo8jj/h8K1LUKHuHJkGhAEhyq80BwDbByDLrbcu7Sn6Zg==
+vim-language-server@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/vim-language-server/-/vim-language-server-2.2.0.tgz#0481f3bce152d45eacaa7012b457c0f183e64dfd"
+  integrity sha512-GXvy3eBQkRQeVAGFrQ2qq6tXDR0O8armLZmWXTYdJ3luk7kTkQFdhGQi2LvzK8vf0YAiqEbNd+9BHdgb6vglMQ==
 
 vscode-jsonrpc@^5.0.1:
   version "5.0.1"
