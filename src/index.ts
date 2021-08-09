@@ -5,7 +5,9 @@ import {
   ServerOptions,
   TransportKind,
   workspace,
-  services
+  services,
+  Buffer,
+  events,
 } from 'coc.nvim';
 import {resolve} from 'path';
 
@@ -89,27 +91,24 @@ export async function activate(context: ExtensionContext) {
     clientOptions
   );
 
-  const changeIskeyword = async () => {
-    const doc = await workspace.document
-    if (!doc) {
-      return
-    }
-    const buffer = doc.buffer
+  const changeIskeyword = async (buffer: Buffer) => {
     const iskeyword = await buffer.getOption('iskeyword')
-    client.sendNotification('$/change/iskeyword', iskeyword)
+    if (client.started) {
+      client.sendNotification('$/change/iskeyword', iskeyword)
+    }
   }
 
   client.onReady().then(() => {
-    setTimeout(changeIskeyword, 100);
+    setTimeout(() => {
+      let doc = workspace.documents.find(o => o.filetype == 'vim')
+      if (doc) changeIskeyword(doc.buffer)
+    }, 100);
   })
 
-  context.subscriptions.push(
-    workspace.registerAutocmd({
-      event: "BufEnter",
-      pattern: '*.vim',
-      callback: changeIskeyword
-    })
-  )
+  events.on('BufEnter', async bufnr => {
+    let buffer = nvim.createBuffer(bufnr)
+    await changeIskeyword(buffer)
+  }, null, context.subscriptions)
 
   // Push the disposable to the context's subscriptions so that the
   // client can be deactivated on extension deactivation
