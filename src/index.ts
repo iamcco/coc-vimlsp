@@ -106,8 +106,8 @@ export async function activate(context: ExtensionContext) {
   })
 
   events.on('BufEnter', async bufnr => {
-    let buffer = nvim.createBuffer(bufnr)
-    await changeIskeyword(buffer)
+    const doc = await workspace.document
+    if (doc && doc.filetype == 'vim') await changeIskeyword(doc.buffer)
   }, null, context.subscriptions)
 
   // Push the disposable to the context's subscriptions so that the
